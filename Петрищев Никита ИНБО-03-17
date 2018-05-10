@@ -1,0 +1,15 @@
+#include <fstream>
+#include <iostream>
+using namespace std;
+
+
+int main () {
+	char *a = new char;
+	cout <<"Vvedite cifru : ";
+	cin >> a;
+	ofstream fout("Tekstov fail dlja cifr.txt");
+	fout << a;
+	fout.close();
+	delete a;
+	return 0;
+}
